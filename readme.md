@@ -1,12 +1,14 @@
 # Suite to patch the LuaScripts.luap of The Saboteur for Xbox360
 
+To more information check the article on [my website](https://daniele.tech/2020/12/reverse-engineering-the-saboteur-game-for-xbox360-with-linux/).
+
 ## Requirements
 
 * Linux
-* quickbms
-* unluac.jar
-* luac5.1.exe
-* wine
+* quickbms - Unpacker/packer with custom scripting language
+* unluac.jar - Generate Lua code from Luac bytecode
+* luac5.1.exe - generate Lua Bytecode from Lua scripts
+* wine - Run windows tools on Linux
 
 ## How works
 

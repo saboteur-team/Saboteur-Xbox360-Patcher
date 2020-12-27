@@ -15,7 +15,7 @@ done
 
 echo "Execute batch file"
 cp ./tools/luac5.1.exe /tmp/luascripts/luac5.1.exe
-wine cmd < /tmp/run.bat >> /dev/null
+wine64 cmd < /tmp/run.bat >> /dev/null
 rm /tmp/luascripts/luac5.1.exe
 
 echo "Repackage luap"
