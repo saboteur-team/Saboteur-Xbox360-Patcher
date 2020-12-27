@@ -1,0 +1,23 @@
+get FILES long
+reverselong FILES
+
+for i = 0 < FILES
+    getdstring HASH 8
+    get OFFSET long
+    reverselong OFFSET
+    get SIZE long
+    reverselong SIZE
+    get XSIZE long
+    reverselong XSIZE
+    get DUMMY byte
+
+    savepos TMP
+    goto OFFSET
+    set NAMESZ 120 # fixed value because the data is not consistent
+    getdstring DUMMY 17
+    getdstring NAME NAMESZ
+    string NAME | ":"
+    goto TMP
+
+    log NAME OFFSET SIZE
+next i
