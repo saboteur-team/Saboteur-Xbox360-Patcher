@@ -9,6 +9,7 @@ To more information check the article on [my website](https://daniele.tech/2020/
 * unluac.jar - Generate Lua code from Luac bytecode
 * luac5.1.exe - generate Lua Bytecode from Lua scripts
 * wine - Run windows tools on Linux
+* ChunkSpy - To corsscompile the lua bytecode 
 
 ## How works
 

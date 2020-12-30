@@ -1,0 +1,19 @@
+--- ./Saboteur-Xbox360-Patcher/tools/ChunkSpy-0.9.8/5.1/ChunkSpy.lua	2020-12-30 22:38:19.996117498 +0100
++++ ./5.1/ChunkSpy.lua	2020-12-30 22:25:02.109331311 +0100
+@@ -100,6 +100,16 @@
+     integral = 1,
+     number_type = "int",
+   },
++  ["saboteur"] = {
++    description = "(32-bit, big endian, ints)",
++    endianness = 0,
++    size_int = 4,
++    size_size_t = 4,
++    size_Instruction = 4,
++    size_lua_Number = 8,
++    integral = 0,
++    number_type = "int",
++  },
+   -- you can add more platforms here
+ }
+ 

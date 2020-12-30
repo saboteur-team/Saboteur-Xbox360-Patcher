@@ -18,3 +18,9 @@ echo "Downloading luac5.1.exe"
 wget https://netcologne.dl.sourceforge.net/project/luabinaries/5.1.5/Tools%20Executables/lua-5.1.5_Win32_bin.zip
 unzip -o lua-5.1.5_Win32_bin.zip -d ./tools
 rm lua-5.1.5_Win32_bin.zip
+
+echo "Downloading Chunkspy"
+wget http://files.luaforge.net/releases/chunkspy/chunkspy/ChunkSpy-0.9.8/ChunkSpy-0.9.8.zip
+unzip -o ChunkSpy-0.9.8.zip -d ./tools
+patch -u ./tools/ChunkSpy-0.9.8/5.1/ChunkSpy.lua -i chunkspy.diff
+rm ChunkSpy-0.9.8.zip
