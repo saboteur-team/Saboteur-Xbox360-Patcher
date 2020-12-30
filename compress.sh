@@ -9,7 +9,7 @@ rm -fr /tmp/run.bat
 
 echo "Generate batch file"
 for f in $(find /tmp/luascripts -name '*.lua' ! -iname 'BelleInteriorSceneManager.lua' ! -iname 'AggroSpawner.lua' ! -iname 'CoDSpawner.lua'); do
-    windowspath=$(sed 's/\/tmp\/luascripts/D\:/' <<< $f)
+    windowspath=$(sed 's/\/tmp\/luascripts/d\:/' <<< $f)
     windowspath=$(sed "s/\//\\\/g" <<< $windowspath)
     echo 'D:\luac5.1.exe -o' "\"$windowspath\"" "\"$windowspath\"" >> /tmp/run.bat
 done
