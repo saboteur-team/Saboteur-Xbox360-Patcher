@@ -12,7 +12,7 @@
 +    size_Instruction = 4,
 +    size_lua_Number = 8,
 +    integral = 0,
-+    number_type = "int",
++    number_type = "double",
 +  },
    -- you can add more platforms here
  }
