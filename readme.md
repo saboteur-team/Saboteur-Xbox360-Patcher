@@ -7,9 +7,9 @@ To more information check the article on [my website](https://daniele.tech/2020/
 * Linux
 * quickbms - Unpacker/packer with custom scripting language
 * unluac.jar - Generate Lua code from Luac bytecode
-* luac5.1.exe - generate Lua Bytecode from Lua scripts
+* luac5.1.exe - generate Lua Bytecode from Lua scripts (modded version)
 * wine - Run windows tools on Linux
-* ChunkSpy - To corsscompile the lua bytecode 
+* ChunkSpy - To crosscompile the lua bytecode 
 
 ## How works
 
