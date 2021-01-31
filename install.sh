@@ -14,10 +14,10 @@ wget https://kumisystems.dl.sourceforge.net/project/unluac/unluacv1.2.2.zip
 unzip -o unluacv1.2.2.zip -d ./tools
 rm unluacv1.2.2.zip
 
-echo "Downloading luac5.1.exe"
-wget https://netcologne.dl.sourceforge.net/project/luabinaries/5.1.5/Tools%20Executables/lua-5.1.5_Win32_bin.zip
-unzip -o lua-5.1.5_Win32_bin.zip -d ./tools
-rm lua-5.1.5_Win32_bin.zip
+echo "Downloading luac 5.1 modded"
+wget https://github.com/saboteur-team/Saboteur-Xbox360-Patcher/releases/download/luaplus-51/luaplus.zip
+unzip -o luaplus.zip -d ./tools
+rm luaplus.zip
 
 echo "Downloading Chunkspy"
 wget http://files.luaforge.net/releases/chunkspy/chunkspy/ChunkSpy-0.9.8/ChunkSpy-0.9.8.zip

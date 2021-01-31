@@ -11,13 +11,13 @@ echo "Generate batch file"
 for f in $(find /tmp/luascripts -name '*.lua' ! -iname 'BelleInteriorSceneManager.lua' ! -iname 'AggroSpawner.lua' ! -iname 'CoDSpawner.lua'); do
     windowspath=$(sed 's/\/tmp\/luascripts/d\:/' <<< $f)
     windowspath=$(sed "s/\//\\\/g" <<< $windowspath)
-    echo 'D:\luac5.1.exe -o' "\"$windowspath\"" "\"$windowspath\"" >> /tmp/run.bat
+    echo 'D:\luac.exe -o' "\"$windowspath\"" "\"$windowspath\"" >> /tmp/run.bat
 done
 
 echo "Execute batch file to generate lua bytecode"
-cp ./tools/luac5.1.exe /tmp/luascripts/luac5.1.exe
+cp ./tools/luac.exe /tmp/luascripts/luac.exe
 wine64 cmd < /tmp/run.bat >> /dev/null
-rm /tmp/luascripts/luac5.1.exe
+rm /tmp/luascripts/luac.exe
 
 echo "Change the bytecode to Xbox360 system"
 for f in $(find /tmp/luascripts -name '*.lua' ! -iname 'BelleInteriorSceneManager.lua' ! -iname 'AggroSpawner.lua' ! -iname 'CoDSpawner.lua'); do
